@@ -7,7 +7,7 @@ class NewsItem extends Component {
     return (
       
       <div>
-          <img style={{width: 20, height: 20}} src={this.props.icon} />
+          <img alt={this.props.item.title} style={{width: 20, height: 20}} src={this.props.icon} />
           <a href={this.props.item.link}>{this.props.item.title}</a>
       </div>
     );
