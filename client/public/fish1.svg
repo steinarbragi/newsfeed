@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="336px" height="246px" viewBox="0 0 336 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>fish1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.841414,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#20E6D9" offset="0%"></stop>
+            <stop stop-color="#186FE1" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#20E6D9" offset="0%"></stop>
+            <stop stop-color="#186FE1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fish1" transform="translate(0.000000, -1.000000)">
+            <path d="M198.171288,16.2765309 C257.136792,16.2765309 334.752561,91.2634522 334.752561,91.2634522 L242.311664,91.2634522 C242.311664,91.2634522 236.713102,67.7073415 198.171288,58.1393644 C156.324101,58.1393644 117.352944,157.871639 62.0965076,246.119212 C59.1582003,237.219869 69.4540208,183.477847 81.3498123,135.51637 C93.2456039,87.5548925 139.205784,16.2765309 198.171288,16.2765309 Z" id="Polygon" fill="url(#radialGradient-1)"></path>
+            <path d="M152.440743,0.938821132 C211.406247,0.938821132 335.162547,59.3981965 335.162547,59.3981965 L242.72165,59.3981965 C242.72165,59.3981965 172.750628,26.476368 110.358855,44.6675275 C47.9670816,62.8586871 3.66378413,149.082087 3.66378413,149.082087 C0.725476836,141.115634 -5.22673078,130.020779 16.3845779,79.2311602 C37.9958865,28.4415417 93.4752386,0.938821132 152.440743,0.938821132 Z" id="Polygon" fill="url(#linearGradient-2)" transform="translate(167.897043, 75.010454) scale(1, -1) translate(-167.897043, -75.010454) "></path>
+        </g>
+    </g>
+</svg>

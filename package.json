@@ -24,7 +24,6 @@
     "express": "~4.15.2",
     "express-jwt": "^5.3.1",
     "express-jwt-authz": "^1.0.0",
-    "express-react-views": "^0.10.2",
     "express-x-hub": "^1.0.4",
     "jade": "~1.11.0",
     "jwks-rsa": "^1.2.1",
