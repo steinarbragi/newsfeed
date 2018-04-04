@@ -1,0 +1,41 @@
+{
+  "name": "fiskar",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start",
+    "debug": "nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "serve": "node ./bin/www",
+    "postinstall": "cd client && yarn install",
+    "dev": "concurrently \"cd client && yarn start\" \"yarn debug\" \"cd client && gulp\"",
+    "start": "concurrently \"cd client && yarn start\" \"yarn debug\"",
+    "build": "babel . --ignore node_modules,build,client,docs --out-dir build",
+    "postbuild": "cd client && yarn build",
+    "start:prod": "NODE_ENV=production node ./bin/www",
+    "heroku-postbuild": "yarn build"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "body-parser": "~1.17.1",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "express-jwt": "^5.3.1",
+    "express-jwt-authz": "^1.0.0",
+    "express-react-views": "^0.10.2",
+    "express-x-hub": "^1.0.4",
+    "jade": "~1.11.0",
+    "jwks-rsa": "^1.2.1",
+    "mongodb": "^2.2.29",
+    "morgan": "~1.8.1",
+    "npm": "^5.7.1",
+    "rss-parser": "^3.1.2",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "express-x-hub": "^1.0.4",
+    "nodemon": "^1.17.2"
+  }
+}
