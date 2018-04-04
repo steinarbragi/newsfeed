@@ -10,28 +10,39 @@ let parser = new Parser();
 
 
 router.get('/feed/mbl', function(req, res, next) {
-    //console.log('yo');
-    //res.json({'yo':'yo'})
     (async () => {
- 
         let feed = await parser.parseURL('https://www.mbl.is/feeds/200milur/');
-        console.log(feed.title);
-        
         res.json(feed.items);
-        /*
-        feed.items.forEach(item => {
-          console.log(item.title + ':' + item.link)
-        });*/
-       
+      })();
+});
+
+router.get('/feed/fiskifrettir', function(req, res, next) {
+    (async () => {
+        let feed = await parser.parseURL('http://www.fiskifrettir.is/rss/');
+        res.json(feed.items);
+      })();
+});
+
+router.get('/feed/kvotinn', function(req, res, next) {
+    (async () => {
+        let feed = await parser.parseURL('https://kvotinn.is/feed/');
+        res.json(feed.items);
       })();
 });
 
 
 router.get('/feed/:source', function(req, res, next) {
+    var source = req.params.source;
     query = {"source": req.params.source};
+    (async () => {
+        let feed = await parser.parseURL(source);
+        res.json(feed.items);
+      })();
+    /*
     req.mongoDb.collection("news").find(query).toArray(function(err,results){
         res.json(results);
     });
+    */
 });
 
 
