@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import NewsItem from './NewsItem';
+import KvotinnLogo from '../../img/kvotinn.png';
+import MblLogo from '../../img/mbl.png';
+import FblLogo from '../../img/fbl.ico';
+
 import axios from 'axios';
 
 class NewsFeed extends Component {
@@ -37,15 +41,15 @@ class NewsFeed extends Component {
       <div>
         <h2>MBL 200 Mílur</h2>
         {this.state.mbl && this.state.mbl.map((item, idx) => 
-          (<NewsItem key={idx} item={item} />))}
+          (<NewsItem key={idx} item={item} icon={MblLogo} />))}
 
         <h2>Kvótinn</h2>
         {this.state.kvotinn && this.state.kvotinn.map((item, idx) => 
-          (<NewsItem key={idx} item={item} />))}
+          (<NewsItem key={idx} item={item} icon={KvotinnLogo} />))}
         
         <h2>Fiskifréttir</h2>
         {this.state.fiskifrettir && this.state.fiskifrettir.map((item, idx) => 
-          (<NewsItem key={idx} item={item} />))}
+          (<NewsItem key={idx} item={item} icon={FblLogo} />))}
 
       </div>
     );
